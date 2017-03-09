@@ -1,0 +1,43 @@
+//头部
+@bg-grey:#f2f2f2;
+@f-grey:#333;
+@f-red:#e26f7b;
+body{
+  color: @f-grey;
+  font-family:"PingFangSC-Regular","微软雅黑","Microsoft YaHei";
+}
+header{
+  position: relative;
+  height:.9rem;
+  background: #333333;
+  line-height:.9rem;
+  .back{
+    margin-left:.3rem;
+    position: absolute;
+    width:.18rem;
+    height:.9rem;
+    background: url("../image/index/back.png") no-repeat left center;
+    background-size: .18rem .32rem;
+  }
+  h2{
+    font-size: .36rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing:.02rem;
+  }
+  .info{
+    margin-right:.3rem;
+    right: 0;
+    top:0;
+    position: absolute;
+    width: .49rem;
+    height: .9rem;
+    background: url("../image/index/info.png") no-repeat right center;
+    background-size: .49rem .1rem;
+  }
+
+}
+//主体
+section{
+  background: @bg-grey;
+}

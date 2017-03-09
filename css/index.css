@@ -1,0 +1,184 @@
+body {
+  color: #333;
+  font-family: "PingFangSC-Regular", "微软雅黑", "Microsoft YaHei";
+}
+header {
+  position: relative;
+  height: .9rem;
+  background: #333333;
+  line-height: .9rem;
+}
+header .back {
+  margin-left: .3rem;
+  position: absolute;
+  width: .18rem;
+  height: .9rem;
+  background: url("../image/index/back.png") no-repeat left center;
+  background-size: .18rem .32rem;
+}
+header h2 {
+  font-size: .36rem;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: .02rem;
+}
+header .info {
+  margin-right: .3rem;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: .49rem;
+  height: .9rem;
+  background: url("../image/index/info.png") no-repeat right center;
+  background-size: .49rem .1rem;
+}
+section {
+  background: #f2f2f2;
+}
+section {
+  background: #f2f2f2;
+}
+section .nav .searchBar {
+  background: #ffffff;
+  border-bottom: .01rem solid #e6e6e6;
+  padding: .18rem;
+  padding-right: 0;
+}
+section .nav .searchBar img {
+  width: .64rem;
+  height: .64rem;
+}
+section .nav .searchBar .searchBox {
+  margin-left: .18rem;
+  border-radius: .05rem;
+  display: inline-block;
+  width: 5.44rem;
+  height: .64rem;
+}
+section .nav .searchBar .searchBox input {
+  width: 100%;
+  height: 100%;
+  background: url("../image/index/search.png") no-repeat 2.1rem center;
+  background-size: .26rem;
+  background-color: #f0f0f0;
+  border-radius: inherit;
+  font-size: .26rem;
+  text-indent: .2rem;
+}
+section .nav .searchBar .searchBox input::-webkit-input-placeholder {
+  text-align: center;
+}
+section .nav .searchBar .follow {
+  display: inline-block;
+  margin-left: .3rem;
+}
+section .nav .searchBar .follow dt {
+  text-align: center;
+  height: .33rem;
+  background: url("../image/index/star.png") no-repeat center center;
+  background-size: .34rem .33rem;
+}
+section .nav .searchBar .follow dd {
+  font-size: .2rem;
+  letter-spacing: .02rem;
+  margin-top: .1rem;
+}
+section .nav .pannel {
+  background: #ffffff;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: .3rem .54rem .5rem;
+}
+section .nav .pannel dl dt .comic {
+  background: linear-gradient(#23d3e8, #2396e8);
+}
+section .nav .pannel dl dt .skin {
+  background: linear-gradient(#e951a0, #e75f6c);
+}
+section .nav .pannel dl dt .travel {
+  background: linear-gradient(#18d2b6, #18d0d2);
+}
+section .nav .pannel dl dt .expect {
+  background: linear-gradient(#c0c0c0, #999999);
+}
+section .nav .pannel dl dd {
+  margin-top: .19rem;
+  letter-spacing: .02rem;
+  font-size: .24rem;
+}
+section .main {
+  padding: .2rem .2rem 0;
+  height: 100%;
+}
+section .main .msg {
+  box-shadow: 0 0.04rem 0.1rem 0.04rem rgba(82, 82, 82, 0.06);
+  margin-bottom: .2rem;
+  height: .83rem;
+  font-size: .24rem;
+  border-radius: .1rem;
+  background: #ffffff;
+  padding: 0 .48rem 0 .3rem;
+  line-height: .83rem;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+section .main .msg .trumpet {
+  position: absolute;
+  width: .32rem;
+  height: .83rem;
+  background: url("../image/index/trumpet.png") no-repeat center center;
+  background-size: .32rem .27rem;
+}
+section .main .msg .hotWords {
+  border: 0.01rem solid #e26f7b;
+  color: #e26f7b;
+  font-size: .2rem;
+  width: .56rem;
+  height: .28rem;
+  border-radius: .05rem;
+  vertical-align: top;
+  margin-left: .62rem;
+  margin-right: .18rem;
+  padding: .04rem .09rem;
+}
+section .main .detail {
+  height: 3.71rem;
+  background-size: cover;
+  box-shadow: 0 0.04rem 0.1rem 0.04rem rgba(82, 82, 82, 0.06);
+}
+section .main .detail .tip {
+  overflow: hidden;
+  border-radius: .1rem;
+  margin: .59rem auto;
+  width: 5.96rem;
+  height: 2.65rem;
+  padding: 0 .38rem .45rem .31rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+section .main .detail .tip h3 {
+  font-family: 'PingFangSC-Regular';
+  margin: .35rem 0;
+  font-size: .28rem;
+  letter-spacing: .02rem;
+  text-align: center;
+}
+section .main .detail .tip p {
+  font-size: .24rem;
+  line-height: .36rem;
+  vertical-align: top;
+}
+.pannelBase {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: .05rem;
+}
+.recruit {
+  background: url("../image/index/bg02.png") no-repeat;
+}
+.rules {
+  background: url("../image/index/bg01.png") no-repeat;
+}
