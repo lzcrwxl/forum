@@ -1,34 +1,43 @@
 //头部
-@bg-grey:#f2f2f2;
-@f-grey:#333;
-@f-red:#e26f7b;
-body{
-  color: @f-grey;
-  font-family:"PingFangSC-Regular","微软雅黑","Microsoft YaHei";
+html {
+  height: 100%;
+  background: @bg-grey;
 }
-header{
+
+@bg-grey: #f2f2f2;
+@f-grey: #333;
+@f-red: #e26f7b;
+@f-red-d:#f03737;
+@f-blue:#45abeb;
+@f-green:#18d0d1;
+body {
+  color: @f-grey;
+  font-family: "PingFangSC-Regular", "微软雅黑", "Microsoft YaHei";
+}
+
+header {
   position: relative;
-  height:.9rem;
+  height: .9rem;
   background: #333333;
-  line-height:.9rem;
-  .back{
-    margin-left:.3rem;
+  line-height: .9rem;
+  .back {
+    margin-left: .3rem;
     position: absolute;
-    width:.18rem;
-    height:.9rem;
+    width: .18rem;
+    height: .9rem;
     background: url("../image/index/back.png") no-repeat left center;
     background-size: .18rem .32rem;
   }
-  h2{
+  h2 {
     font-size: .36rem;
     color: #ffffff;
     text-align: center;
-    letter-spacing:.02rem;
+    letter-spacing: .02rem;
   }
-  .info{
-    margin-right:.3rem;
+  .info {
+    margin-right: .3rem;
     right: 0;
-    top:0;
+    top: 0;
     position: absolute;
     width: .49rem;
     height: .9rem;
@@ -37,7 +46,95 @@ header{
   }
 
 }
+
 //主体
-section{
-  background: @bg-grey;
+section {
+  .main {
+    padding: .2rem .2rem 0;
+    height: 100%;
+    .msg {
+      box-shadow: 0 .04rem 0.1rem .04rem rgba(82, 82, 82, .06);
+      margin-bottom: .2rem;
+      font-size: .24rem;
+      border-radius: .1rem;
+      background: #ffffff;
+      white-space: nowrap;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      .trumpet {
+        position: absolute;
+        width: .32rem;
+        height: .83rem;
+        background: url("../image/index/trumpet.png") no-repeat center center;
+        background-size: .32rem .27rem;
+      }
+    }
+    .detail {
+      background: #ffffff;
+      box-shadow: 0 .04rem 0.1rem .04rem rgba(82, 82, 82, .06);
+      border-radius: .1rem;
+    }
+  }
 }
+//热点
+.hotWords,.newWords{
+  border: .01rem solid @f-red;
+  color: @f-red;
+  font-size: .2rem;
+  width: .56rem;
+  height: .28rem;
+  border-radius: .05rem;
+}
+.menu{
+  font-size: 0;
+  height: .3rem;
+  li{
+    display: inline-block;
+    font-size: .28rem;
+    color: #666666;
+    width:33.333333%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    &:not(:last-child){
+      border-right:.02rem solid #e6e6e6;
+    }
+  }
+  .likes{
+    text-indent: .4rem;
+  }
+  .likes:before{
+    content: '';
+    width:.34rem;
+    height:.34rem;
+    position: absolute;
+    background: url("../image/likes.png") no-repeat center center;
+    background-size: .34rem;
+    top: -.08rem;
+    left: .7rem;
+  }
+  .comm{
+    text-indent: .43rem;
+  }
+  .comm:before{
+    content: '';
+    width:.37rem;
+    height:.37rem;
+    position: absolute;
+    background: url("../image/comment.png") no-repeat center center;
+    background-size: .37rem;
+    top: -.06rem;
+    left: .7rem;
+  }
+  .share:before{
+    content: '';
+    width:.30rem;
+    height:.31rem;
+    position: absolute;
+    background: url("../image/share.png") no-repeat center center;
+    background-size: .30rem .31rem;
+    top: -.06rem;
+  }
+}
+

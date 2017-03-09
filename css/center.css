@@ -123,3 +123,81 @@ section .main .detail {
   background-size: .30rem .31rem;
   top: -0.06rem;
 }
+#loginbar {
+  background: #ffffff;
+  border-bottom: .01rem solid #e6e6e6;
+}
+#loginbar .personInfo {
+  height: 1.5rem;
+  padding-left: .2rem;
+  line-height: 1.5rem;
+  border-bottom: .01rem solid #e6e6e6;
+}
+#loginbar .personInfo img {
+  width: .9rem;
+  height: .9rem;
+  border-radius: .05rem;
+  vertical-align: middle;
+}
+#loginbar .personInfo span {
+  margin-left: .28rem;
+  font-size: .32rem;
+  vertical-align: middle;
+}
+#loginbar ul {
+  margin: .2rem .3rem;
+}
+#loginbar ul li {
+  display: inline-block;
+  width: 50%;
+  font-size: .28rem;
+  padding: .14rem 0;
+}
+#loginbar ul li:first-child {
+  border-right: .01rem solid #e6e6e6;
+}
+#loginbar ul li em {
+  margin-left: .76rem;
+}
+#nav {
+  margin-top: .2rem;
+  border-top: .01rem solid #e6e6e6;
+  border-bottom: .01rem solid #e6e6e6;
+  padding-left: .2rem;
+  background: #ffffff;
+}
+#nav li {
+  font-family: "黑体";
+  position: relative;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .28rem;
+  text-indent: .7rem;
+}
+#nav li:not(:last-child) {
+  border-bottom: .01rem solid #e6e6e6;
+}
+#nav li a {
+  position: absolute;
+  background: url("../image/arrow.png") no-repeat center center;
+  background-size: .14rem .27rem;
+  width: .14rem;
+  height: 100%;
+  right: .3rem;
+}
+#nav .mypost {
+  background: url("../image/center/mypost.png") no-repeat 0.11rem center;
+  background-size: .36rem .37rem;
+}
+#nav .mycol {
+  background: url("../image/center/mycol.png") no-repeat 0.08rem center;
+  background-size: .4rem .36rem;
+}
+#nav .mylike {
+  background: url("../image/center/mylike.png") no-repeat 0.1rem 0.26rem;
+  background-size: .38rem .39rem;
+}
+#nav .myreply {
+  background: url("../image/center/myreply.png") no-repeat 0.1rem 0.28rem;
+  background-size: .38rem .37rem;
+}

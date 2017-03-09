@@ -1,0 +1,139 @@
+@import "common";
+
+.theme{
+  position: relative;
+  background: #ffffff;
+  img{
+    width: .9rem;
+    height: .9rem;
+    margin:.2rem;
+  }
+  .title{
+    margin:.3rem 0 .3rem .1rem;
+    h4{
+      font-size: .32rem;
+    }
+    p{
+      margin-top: .2rem;
+      font-size: .22rem;
+      color: #999;
+    }
+  }
+  a{
+    position: absolute;
+    background: url("../image/forward.png")no-repeat center center;
+    right: .3rem;
+    width:.31rem;
+    height:.27rem;
+    background-size: .31rem .27rem;
+    top:50%;
+    margin-top:-.135rem;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 1rem;
+  background: rgba(0,0,0,.1);
+}
+.main{
+  .msg{
+    height: .69rem;
+    line-height: .69rem;
+    padding-left:.2rem;
+    padding-right:.26rem;
+    .hot{
+      width: .26rem;
+      height: .69rem;
+      background: url("../image/hot.png") no-repeat center center;
+      background-size: .26rem .32rem;
+    }
+    .newPost{
+      width: .27rem;
+      height: .69rem;
+      background: url("../image/post.png") no-repeat center center;
+      background-size: .27rem;
+    }
+    span{
+      margin-left: .4rem;
+      font-size: .3rem;
+    }
+    a{
+      float: right;
+      font-size: .24rem;
+      color: #666;
+    }
+  }
+  .detail{
+    padding:.2rem;
+    .author{
+      img{
+        width: .7rem;
+        height: .7rem;
+        border-radius: 50%;
+      }
+      .authorInfo{
+        margin-left:.2rem;
+        width: 5rem;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        h5{
+          margin-top:.09rem;
+          font-size: .24rem;
+        }
+        p{
+          font-size: .2rem;
+          margin-top:.17rem;
+        }
+      }
+      .collect{
+        margin-right:.1rem;
+        dt{
+          margin:0 auto;
+          width:.35rem;
+          height: .33rem;
+          background: url("../image/collect.png") no-repeat center center;
+          background-size: .35rem .33rem;
+        }
+        dd{
+          margin-top: .1rem;
+          font-size: .2rem;
+          color: #666666;
+        }
+      }
+    }
+    .topic{
+      margin: .3rem 0;
+      margin-left: .1rem;
+      .hotWords{
+        position: absolute;
+        top: 0.02rem;
+        text-align: center;
+        line-height: .28rem;
+      }
+      .newWords{
+        .hotWords;
+        color: @f-blue;
+        border-color: @f-blue;
+      }
+      h2{
+        font-size: .32rem;
+        margin-left: .79rem;
+        font-family: 'Adobe 黑体 Std R';
+        font-weight: 700;
+      }
+    }
+    .describe{
+      margin-left: .1rem;
+      color: #999;
+      font-size: .24rem;
+      line-height: .36rem;
+    }
+    .pic{
+      margin: .29rem 0 .39rem;
+      width: 6.7rem;
+      height: 3.75rem;
+    }
+  }
+}

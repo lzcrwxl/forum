@@ -1,0 +1,80 @@
+@import "common";
+
+#loginbar{
+  background: #ffffff;
+  border-bottom: .01rem solid #e6e6e6;
+  .personInfo{
+    height: 1.5rem;
+    padding-left:.2rem;
+    line-height:1.5rem;
+    border-bottom: .01rem solid #e6e6e6;
+    img{
+      width: .9rem;
+      height: .9rem;
+      border-radius: .05rem;
+      vertical-align:middle;
+    }
+    span{
+      margin-left:.28rem;
+      font-size: .32rem;
+      vertical-align: middle;
+    }
+  }
+  ul{
+    margin:.2rem .3rem;
+    li{
+      display: inline-block;
+      width: 50%;
+      font-size: .28rem;
+      padding:.14rem 0;
+      &:first-child{
+        border-right:.01rem solid #e6e6e6;
+      }
+      em{
+        margin-left: .76rem;
+      }
+    }
+  }
+}
+#nav{
+  margin-top:.2rem;
+  border-top: .01rem solid #e6e6e6;
+  border-bottom: .01rem solid #e6e6e6;
+  padding-left: .2rem;
+  background: #ffffff;
+  li{
+    font-family: "黑体";
+    position: relative;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .28rem;
+    text-indent: .7rem;
+    &:not(:last-child){
+      border-bottom:.01rem solid #e6e6e6;
+    }
+    a{
+      position: absolute;
+      background: url("../image/arrow.png") no-repeat center center;
+      background-size: .14rem .27rem;
+      width:.14rem;
+      height:100%;
+      right: .3rem;
+    }
+  }
+  .mypost{
+    background: url("../image/center/mypost.png")no-repeat .11rem center;
+    background-size: .36rem .37rem;
+  }
+  .mycol{
+    background: url("../image/center/mycol.png")no-repeat .08rem center;
+    background-size: .4rem .36rem;
+  }
+  .mylike{
+    background: url("../image/center/mylike.png")no-repeat .1rem .26rem;
+    background-size: .38rem .39rem;
+  }
+  .myreply{
+    background: url("../image/center/myreply.png")no-repeat .1rem .28rem;
+    background-size: .38rem .37rem;
+  }
+}
