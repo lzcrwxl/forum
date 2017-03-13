@@ -123,111 +123,205 @@ section .main .detail {
   background-size: .30rem .31rem;
   top: -0.06rem;
 }
-.post {
-  font-size: .32rem;
-  padding: 0 .19rem 0 .3rem;
-  height: .88rem;
-  line-height: .88rem;
-}
-.post button {
-  background: #18d0d1;
-  font-size: .26rem;
-  color: #ffffff;
-  text-align: center;
-  width: 1rem;
-  height: .5rem;
-  line-height: .5rem;
-  border-radius: .03rem;
-  right: 0.19rem;
-  top: 50%;
-  margin-top: -0.25rem;
-}
-#postCtn {
-  background: #ffffff;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-#postCtn .postContainer {
-  padding-left: .3rem;
-  border-bottom: 1px solid #e6e6e6;
-}
-#postCtn .postContainer input {
-  height: .87rem;
-  width: 100%;
-  line-height: .87rem;
-  font-size: .3rem;
-  border-bottom: .01rem solid #e6e6e6;
-}
-#postCtn .postContainer div textarea {
-  margin-top: .3rem;
-  width: 100%;
-  font-size: .3rem;
-  height: 3.4rem;
-}
-#postCtn .postContainer div i {
+.modal {
   position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.popUpComm {
+  position: absolute;
+  background: #ffffff;
+  border-radius: .1rem;
+  margin: .4rem auto 0;
+  width: 7.1rem;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.popUpComm textarea {
+  padding: .3rem;
+  font-size: .28rem;
+  width: 100%;
+  line-height: .36rem;
+  height: 2.9rem;
+  border-top-left-radius: .1rem;
+  border-top-right-radius: .1rem;
+  border-bottom: .02rem solid #e6e6e6;
+}
+.popUpComm .pannel {
+  border-bottom-right-radius: .1rem;
+  border-bottom-left-radius: .1rem;
+  background: #fafafa;
+  padding: 0 .42rem;
+  height: 1rem;
+  line-height: 1rem;
+}
+.popUpComm .pannel i {
+  vertical-align: middle;
+  display: inline-block;
+  background: url("../image/emoji.png") no-repeat;
+  background-size: contain;
   width: .42rem;
   height: .42rem;
-  background: url("../image/post/emoji.png") no-repeat;
-  background-size: .42rem;
-  right: .4rem;
-  bottom: .3rem;
 }
-#postCtn .upload {
-  padding: .3rem .3rem 0;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.popUpComm .pannel .btnWrapper {
+  float: right;
+  font-size: .26rem;
 }
-#postCtn .upload dl dt {
-  width: 1.5rem;
-  height: 1.5rem;
+.popUpComm .pannel .btnWrapper button {
+  vertical-align: middle;
+  width: 1rem;
+  height: .5rem;
+  text-align: center;
+  line-height: .5rem;
+  border-radius: .05rem;
 }
-#postCtn .upload dl .preview::after {
-  content: '';
+.popUpComm .pannel .btnWrapper .cancel {
+  background: transparent;
+  border: .01rem solid #999999;
+}
+.popUpComm .pannel .btnWrapper .post {
+  margin-left: .3rem;
+  background: #18d0d1;
+  color: #ffffff;
+}
+.forwardArrow {
   position: absolute;
-  background: url("../image/post/minus.png") no-repeat;
-  top: -0.14rem;
-  right: -0.14rem;
-  background-size: .3rem;
-  width: .3rem;
-  height: .3rem;
+  background: url("../image/arrow.png") no-repeat center center;
+  background-size: .14rem .27rem;
+  width: .14rem;
+  height: 100%;
+  right: .3rem;
 }
-#postCtn .upload dl dd {
-  margin: .2rem auto;
+.theme {
+  position: relative;
+  background: #ffffff;
+  border-bottom: .01rem solid #e6e6e6;
 }
-#postCtn .upload dl .selected {
-  background: url("../image/post/circle.png") no-repeat center center;
-  background-size: .3rem;
-  height: .3rem;
+.theme img {
+  width: .9rem;
+  height: .9rem;
+  margin: .2rem;
 }
-#postCtn .upload .unsel dt {
-  background: url("../image/post/add.png") no-repeat center center;
-  background-size: .8rem;
-  background-color: #e6e6e6;
+.theme .title {
+  margin: .3rem 0 .3rem .1rem;
 }
-#postCtn .upload .unsel dd span {
-  padding-left: .4rem;
+.theme .title h4 {
+  font-size: .32rem;
+}
+.theme .title p {
+  margin-top: .2rem;
+  font-size: .22rem;
+  color: #999;
+}
+.theme .forward {
+  position: absolute;
+  background: url("../image/forward.png") no-repeat center center;
+  right: .3rem;
+  width: .31rem;
+  height: .27rem;
+  background-size: .31rem .27rem;
+  top: 50%;
+  margin-top: -0.135rem;
+}
+.detail {
+  padding: .2rem;
+}
+.detail .author img {
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+}
+.detail .author .authorInfo {
+  margin-left: .2rem;
+  width: 5rem;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.detail .author .authorInfo h5 {
+  margin-top: .09rem;
   font-size: .24rem;
-  color: #666666;
-  background: url("../image/post/chosen.png") no-repeat left center;
-  background-size: .29rem;
 }
-#category {
-  font-family: "黑体";
-  margin-top: .18rem;
-  height: .88rem;
-  line-height: .88rem;
-  padding-left: .3rem;
+.detail .author .authorInfo p {
+  font-size: .2rem;
+  margin-top: .17rem;
+}
+.detail .author .collect {
+  margin-right: .1rem;
+}
+.detail .author .collect dt {
+  margin: 0 auto;
+  width: .35rem;
+  height: .33rem;
+  background: url("../image/collect.png") no-repeat center center;
+  background-size: .35rem .33rem;
+}
+.detail .author .collect dd {
+  margin-top: .1rem;
+  font-size: .2rem;
+  color: #666666;
+}
+.detail .topic {
+  margin: .3rem 0;
+  margin-left: .1rem;
+}
+.detail .topic .hotWords {
+  position: absolute;
+  top: 0.02rem;
+  text-align: center;
+  line-height: .28rem;
+}
+.detail .topic .newWords {
+  position: absolute;
+  top: 0.02rem;
+  text-align: center;
+  line-height: .28rem;
+  color: #45abeb;
+  border-color: #45abeb;
+}
+.detail .topic h2 {
+  font-size: .32rem;
+  margin-left: .79rem;
+  font-family: 'Adobe 黑体 Std R';
+  font-weight: 700;
+}
+.detail .describe {
+  margin-left: .1rem;
+  color: #999;
+  font-size: .24rem;
+  line-height: .36rem;
+}
+.detail .pic {
+  margin: .29rem 0 .39rem;
+  width: 6.7rem;
+  height: 3.75rem;
+}
+.theme {
   font-size: .3rem;
 }
-#category a {
-  position: absolute;
-  right: 0;
-  background: url("../image/arrow.png") no-repeat right center;
-  background-size: .14rem .27rem;
-  font-size: .28rem;
-  margin-right: .3rem;
-  padding-right: .26rem;
+.main {
+  padding: 0!important;
+  margin: .2rem 0;
+}
+.main .detail {
+  border-radius: 0!important;
+  box-shadow: none!important;
+}
+.main .detail .pic {
+  width: 100%;
+}
+.main .detail .pic img {
+  width: 100%;
+}
+.main .menu {
+  margin: .3rem 0 .2rem;
+  padding: .4rem 0;
+  background: #fafafa;
 }

@@ -1,0 +1,152 @@
+@import "common";
+
+.post {
+  font-size: .32rem;
+  padding: 0 .19rem 0 .3rem;
+  height: .88rem;
+  line-height: .88rem;
+  button {
+    background: @f-green;
+    font-size: .26rem;
+    color: #ffffff;
+    text-align: center;
+    width: 1rem;
+    height: .5rem;
+    line-height: .5rem;
+    border-radius: .03rem;
+    right: 0.19rem;
+    top: 50%;
+    margin-top: -.25rem;
+  }
+}
+
+#postCtn {
+  background: #ffffff;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  .postContainer {
+    padding-left: .3rem;
+    border-bottom: 1px solid #e6e6e6;
+    input {
+      height: .87rem;
+      width: 100%;
+      line-height: .87rem;
+      font-size: .3rem;
+      border-bottom: .01rem solid #e6e6e6;
+    }
+    div {
+      textarea {
+        margin-top: .3rem;
+        width: 100%;
+        font-size: .3rem;
+        height: 3.4rem;
+      }
+      i {
+        position: absolute;
+        width: .42rem;
+        height: .42rem;
+        background: url("../image/emoji.png") no-repeat;
+        background-size: .42rem;
+        right: .4rem;
+        bottom: .3rem;
+      }
+    }
+
+  }
+  .upload {
+    padding: .3rem .3rem 0;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    dl {
+      dt {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      .preview::after{
+        content: '';
+        position: absolute;
+        background: url("../image/post/minus.png")no-repeat;
+        top:-.14rem;
+        right:-.14rem;
+        background-size: .3rem;
+        width: .3rem;
+        height: .3rem;
+      }
+      dd {
+        margin: .2rem auto;
+      }
+      .selected {
+        background: url("../image/post/circle.png") no-repeat center center;
+        background-size: .3rem;
+        height: .3rem;
+      }
+    }
+    .unsel {
+      dt {
+        background: url("../image/post/add.png") no-repeat center center;
+        background-size: .8rem;
+        background-color: #e6e6e6;
+      }
+      dd{
+        span{
+          padding-left:.4rem;
+          font-size: .24rem;
+          color: #666666;
+          background: url("../image/post/chosen.png") no-repeat left center;
+          background-size: .29rem;
+        }
+      }
+    }
+  }
+}
+#category{
+   font-family: "黑体";
+   margin-top:.18rem;
+   height: .88rem;
+   line-height:.88rem;
+   padding-left: .3rem;
+   font-size: .3rem;
+   a{
+     position: absolute;
+     right: 0;
+     background: url("../image/arrow.png") no-repeat right center;
+     background-size: .14rem .27rem;
+     font-size: .28rem;
+     margin-right:.3rem;
+     padding-right: .26rem;
+   }
+ }
+//弹出层
+.popUpInfo{
+  font-size: .36rem;
+  width: 100%;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  z-index: 10000;
+  .topMenu{
+    display: flex;
+    justify-content: space-between;
+    padding:0 .3rem;
+    border-bottom:.01rem solid #e6e6e6;
+    height: 1rem;
+    line-height: 1rem;
+    .complete{
+      color:@f-green;
+    }
+  }
+  ul{
+    li{
+      font-size: .36rem;
+      height: 1rem;
+      text-align: center;
+      line-height:1rem;
+      cursor: pointer;
+    }
+    .current{
+      background: #f0f0f0;
+    }
+  }
+}

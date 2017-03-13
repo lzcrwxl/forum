@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <!-- no cache -->
+  <meta http-equiv="cache-control" content="max-age=0">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+  <meta http-equiv="pragma" content="no-cache">
+
+  <title>forum</title>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/comic.css">
-  <link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
-  <title>comic</title>
+  <link rel="stylesheet" href="./css/forum.css">
 </head>
 <body>
 <header>
@@ -15,38 +27,10 @@
   <a href="#" class="info"></a>
 </header>
 <section>
-  <div class="nav">
-    <div class="theme">
-      <img src="./image/timg.png" alt="">
-      <div class="title dib">
-        <h4>电竞动漫</h4>
-        <p>帖子数：999</p>
-      </div>
-      <a class="forward" href="#"></a>
-    </div>
-    <!--轮播广告-->
-    <div class="swiper-container rel">
-      <div class="bannerBg"></div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="image/banner01.png" alt="banner">
-        </div>
-        <div class="swiper-slide">
-          <img src="image/banner01.png" alt="banner">
-        </div>
-        <div class="swiper-slide">
-          <img src="image/banner01.png" alt="banner">
-        </div>
-      </div>
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
   <div class="main">
-    <div class="msg rel">
+    <div class="msg rel tc">
       <i class="hot abs"></i>
-      <span class="">热门</span>
-      <a href="#">查看更多</a>
+      <span class="">热门帖</span>
     </div>
     <div class="detail ovh">
       <div class="author fn-clear">
@@ -76,12 +60,7 @@
         <li class="share"></li>
       </ul>
     </div>
-    <div class="msg rel  mte20">
-      <i class="newPost abs"></i>
-      <span class="">新帖</span>
-      <a href="#">查看更多</a>
-    </div>
-    <div class="detail ovh">
+    <div class="detail ovh mte20 mbe135">
       <div class="author fn-clear">
         <img src="./image/profile.png" alt="profile">
         <div class="authorInfo dib">
@@ -94,7 +73,7 @@
         </dl>
       </div>
       <div class="topic rel">
-        <span class="newWords">新帖</span>
+        <span class="hotWords">热门</span>
         <h2 class="dib">我想上白银，各位大神求带？</h2>
       </div>
       <p class="describe">本人学生党，高一，我想上白银，求大神，上中ADC还可以，就是打野辅助不怎么会玩，会点点...</p>
@@ -111,6 +90,12 @@
     </div>
   </div>
 </section>
+<!--发表评论-->
+<footer>
+  <div id="postInfo">
+    <span>我要发帖</span>
+  </div>
+</footer>
 <!--模态框-->
 <div class="modal dn"></div>
 <!--弹出层-->
@@ -127,13 +112,4 @@
 </body>
 <script src="./js/jquery-3.1.1.min.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/swiper-3.4.1.jquery.min.js"></script>
-<script>
-  var mySwiper = new Swiper('.swiper-container', {
-    loop: true,
-    autoplay: 2000,
-    // 如果需要分页器
-    pagination: '.swiper-pagination',
-  })
-</script>
 </html>

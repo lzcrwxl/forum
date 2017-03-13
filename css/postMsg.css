@@ -303,60 +303,140 @@ section .main .detail {
   width: 6.7rem;
   height: 3.75rem;
 }
-.swiper-container {
+.post {
+  font-size: .32rem;
+  padding: 0 .19rem 0 .3rem;
+  height: .88rem;
+  line-height: .88rem;
+}
+.post button {
+  background: #18d0d1;
+  font-size: .26rem;
+  color: #ffffff;
+  text-align: center;
+  width: 1rem;
+  height: .5rem;
+  line-height: .5rem;
+  border-radius: .03rem;
+  right: 0.19rem;
+  top: 50%;
+  margin-top: -0.25rem;
+}
+#postCtn {
+  background: #ffffff;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+#postCtn .postContainer {
+  padding-left: .3rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+#postCtn .postContainer input {
+  height: .87rem;
   width: 100%;
-  height: 1rem;
-  background: rgba(0, 0, 0, 0.1);
+  line-height: .87rem;
+  font-size: .3rem;
+  border-bottom: .01rem solid #e6e6e6;
 }
-.main .msg {
-  height: .69rem;
-  line-height: .69rem;
-  padding-left: .2rem;
-  padding-right: .26rem;
+#postCtn .postContainer div textarea {
+  margin-top: .3rem;
+  width: 100%;
+  font-size: .3rem;
+  height: 3.4rem;
 }
-.main .msg .hot {
-  width: .26rem;
-  height: .69rem;
-  background: url("../image/hot.png") no-repeat center center;
-  background-size: .26rem .32rem;
+#postCtn .postContainer div i {
+  position: absolute;
+  width: .42rem;
+  height: .42rem;
+  background: url("../image/emoji.png") no-repeat;
+  background-size: .42rem;
+  right: .4rem;
+  bottom: .3rem;
 }
-.main .msg .newPost {
-  width: .27rem;
-  height: .69rem;
-  background: url("../image/post.png") no-repeat center center;
-  background-size: .27rem;
+#postCtn .upload {
+  padding: .3rem .3rem 0;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.main .msg span {
-  margin-left: .4rem;
+#postCtn .upload dl dt {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#postCtn .upload dl .preview::after {
+  content: '';
+  position: absolute;
+  background: url("../image/post/minus.png") no-repeat;
+  top: -0.14rem;
+  right: -0.14rem;
+  background-size: .3rem;
+  width: .3rem;
+  height: .3rem;
+}
+#postCtn .upload dl dd {
+  margin: .2rem auto;
+}
+#postCtn .upload dl .selected {
+  background: url("../image/post/circle.png") no-repeat center center;
+  background-size: .3rem;
+  height: .3rem;
+}
+#postCtn .upload .unsel dt {
+  background: url("../image/post/add.png") no-repeat center center;
+  background-size: .8rem;
+  background-color: #e6e6e6;
+}
+#postCtn .upload .unsel dd span {
+  padding-left: .4rem;
+  font-size: .24rem;
+  color: #666666;
+  background: url("../image/post/chosen.png") no-repeat left center;
+  background-size: .29rem;
+}
+#category {
+  font-family: "黑体";
+  margin-top: .18rem;
+  height: .88rem;
+  line-height: .88rem;
+  padding-left: .3rem;
   font-size: .3rem;
 }
-.main .msg a {
-  float: right;
-  font-size: .24rem;
-  color: #666;
-}
-.swiper-container {
-  width: 100%;
-  height: 1rem;
-}
-.bannerBg {
+#category a {
   position: absolute;
-  background: rgba(0, 0, 0, 0.1);
-  height: 100%;
+  right: 0;
+  background: url("../image/arrow.png") no-repeat right center;
+  background-size: .14rem .27rem;
+  font-size: .28rem;
+  margin-right: .3rem;
+  padding-right: .26rem;
+}
+.popUpInfo {
+  font-size: .36rem;
   width: 100%;
-  z-index: 1000!important;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  z-index: 10000;
 }
-.swiper-pagination {
-  z-index: 1001!important;
+.popUpInfo .topMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .3rem;
+  border-bottom: .01rem solid #e6e6e6;
+  height: 1rem;
+  line-height: 1rem;
 }
-.swiper-pagination-bullet {
-  width: .06rem!important;
-  height: .06rem!important;
-  background: #ffffff!important;
-  opacity: 1!important;
-  border-radius: .03rem!important;
-  transition: width .5s;
+.popUpInfo .topMenu .complete {
+  color: #18d0d1;
 }
-.swiper-pagination-bullet-active {
-  width: .2rem!important;
+.popUpInfo ul li {
+  font-size: .36rem;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  cursor: pointer;
+}
+.popUpInfo ul .current {
+  background: #f0f0f0;
 }

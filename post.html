@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>index</title>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/post.css">
+  <link rel="stylesheet" href="css/post.css">
+  <link rel="stylesheet" href="./css/swiper-3.4.1.min.css">
+  <title>post</title>
 </head>
 <body>
 <header>
@@ -14,56 +15,71 @@
   <a href="#" class="info"></a>
 </header>
 <section>
-  <div class="post rel">
-    发帖
-    <button class="abs">
-      发表
-    </button>
-  </div>
-  <div id="postCtn">
-    <div class="postContainer">
-      <div>
-        <input type="text" placeholder="标题">
+  <div class="nav">
+    <div class="theme">
+      <div class="title dib g6">
+       帖子来源: 电竞动漫
       </div>
-      <div class="rel">
-        <textarea placeholder="说两句吧"></textarea>
-        <i></i>
+      <a class="forwardArrow" href="#"></a>
+    </div>
+  </div>
+  <div class="main">
+    <div class="detail ovh">
+      <div class="author fn-clear">
+        <img src="./image/profile.png" alt="profile">
+        <div class="authorInfo dib">
+          <h5>我是月入12万的董总</h5>
+          <p class="g9">2017-01-02 13:14</p>
+        </div>
+        <dl class="collect tc r">
+          <dt></dt>
+          <dd>收藏</dd>
+        </dl>
+      </div>
+      <div class="topic rel">
+        <span class="hotWords">热门</span>
+        <h2 class="dib">我想上白银，各位大神求带？</h2>
+      </div>
+      <p class="describe">
+        本人学生党，高一，我想上白银，求大神，上中ADC还可以，就是打野辅助不怎么会玩，会点点。本人学生党，高一，我想上白银，求大神，上中ADC还可以，就是打野辅助不怎么会玩，会点点。本人学生党，高一，我想上白银，求大神，上中ADC还可以，就是打野辅助不怎么会玩，会点点。本人学生党，高一，我想上白银，求大神，上中ADC还可以，就是打野辅助不怎么会玩，会点点。
+      </p>
+      <div class="pic">
+        <img src="image/bg03-b.png" alt="">
       </div>
 
     </div>
-    <div class="upload">
-      <dl>
-        <dt class="preview rel">
-          <img src="./image/post/upload.png" alt="upload">
-        </dt>
-        <dd class="selected"></dd>
-      </dl>
-      <dl>
-        <dt class="preview rel">
-          <img src="./image/post/upload.png" alt="upload">
-        </dt>
-        <dd class="selected"></dd>
-      </dl>
-      <dl>
-        <dt class="preview rel">
-          <img src="./image/post/upload.png" alt="upload">
-        </dt>
-        <dd class="selected"></dd>
-      </dl>
-      <dl class="unsel">
-        <dt></dt>
-        <dd class="tc">
-          <span>设为封面</span>
-        </dd>
-      </dl>
-    </div>
-  </div>
-  <div class="category rel bgwh" id="category">
-    选择分类
-    <a href="#" class="g6">电竞动漫</a>
+    <ul class="menu">
+      <li class="likes">
+        <i></i>55
+      </li>
+      <li class="comm">55</li>
+      <li class="share"></li>
+    </ul>
   </div>
 </section>
+<!--模态框-->
+<div class="modal dn"></div>
+<!--弹出层-->
+<div class="popUpComm fn-clear dn">
+  <textarea name="" id="">我是月入12万的董总</textarea>
+  <div class="pannel">
+    <i></i>
+    <div class="btnWrapper">
+      <button class="cancel g9">取消</button>
+      <button class="post">发表</button>
+    </div>
+  </div>
+</div>
 </body>
 <script src="./js/jquery-3.1.1.min.js"></script>
 <script src="./js/common.js"></script>
+<script src="./js/swiper-3.4.1.jquery.min.js"></script>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: 2000,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+  })
+</script>
 </html>
